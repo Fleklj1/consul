@@ -96,11 +96,11 @@ jobs:
               -tags="${{env.GOTAGS}}" \
               ${GO_TEST_FLAGS-} \
               -cover -coverprofile=coverage.txt
-      - uses: actions/upload-artifact@0b7f8abb1508181956e8e162db84b466c27e18ce # pin@v3.1.2
+      - uses: actions/upload-artifact@834a144ee995460fba8ed112a2fc961b36a5ec5a # pin@v4.3.6
         with:
           name: test-results
           path: ${{env.TEST_RESULTS}}
-      - uses: actions/upload-artifact@0b7f8abb1508181956e8e162db84b466c27e18ce # pin@v3.1.2
+      - uses: actions/upload-artifact@834a144ee995460fba8ed112a2fc961b36a5ec5a # pin@v4.3.6
         with:
           name: jsonfile
           path: /tmp/jsonfile
